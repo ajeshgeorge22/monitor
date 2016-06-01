@@ -1,0 +1,18 @@
+=>user
+--------------
+CREATE TABLE users (userid INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+name VARCHAR(20),
+password VARCHAR(30),
+level INT
+);
+INSERT INTO users (`name`,`password`,`level`) VALUES ("admin", "admin","1");
+
+
+=>hosts
+---------
+
+CREATE TABLE hostlist (no INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+user VARCHAR(20),
+hosts VARCHAR(30)
+);
+INSERT INTO hostlist (`user`,`hosts`) VALUES ("user", "master");
